@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 08, 2025 at 03:50 PM
+-- Generation Time: May 05, 2025 at 03:16 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -59,29 +59,24 @@ CREATE TABLE `rollos` (
   `cantidad` int(11) NOT NULL,
   `calificacion` double NOT NULL,
   `precio` double NOT NULL,
-  `idenc` int(11) NOT NULL
+  `idenc` int(11) NOT NULL,
+  `imagen` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `rollos`
 --
 
-INSERT INTO `rollos` (`idrollos`, `nombre`, `descripccion`, `ingredientes`, `cantidad`, `calificacion`, `precio`, `idenc`) VALUES
-(1, 'Philadelphia', 'Clásico rollo fresco con salmón.', 'Salmón, aguacate, queso crema, ajonjolí', 8, 4.5, 22000, 1),
-(2, 'California', 'Rollito fresco y cremoso.', 'Cangrejo, aguacate, pepino, queso crema, masago, ajonjolí', 8, 4.3, 21000, 1),
-(3, 'Alaska', 'Sabor equilibrado con salmón y cangrejo.', 'Salmón, aguacate, cangrejo, queso crema, ajonjolí', 8, 4.4, 23000, 1),
-(4, 'Dinamita', 'Explosión de sabor con masago.', 'Crema de cangrejo, aguacate, masago', 8, 4.2, 20000, 1),
-(5, 'Veggie', 'Opción vegetariana ligera.', 'Queso crema, croqueta de kakiage, aguacate, wakame', 8, 4, 19000, 1),
-(6, 'Tiger Roll', 'Rollo crujiente con salsa teriyaki.', 'Masago, queso crema, aguacate, salmón, teriyaki', 8, 4.6, 24000, 2),
-(7, 'Zeke Roll', 'Combinación tropical con salmón picado.', 'Kanikama, queso crema, maduro, salmón picado, spice, wakame', 8, 4.7, 26000, 2),
-(8, 'Essential', 'Rollo sin arroz con base de maduro.', 'Maduro, salmón, queso crema, cangrejo, aguacate, teriyaki', 6, 4.4, 25000, 2),
-(9, 'Katana', 'Rollo con calamar y toque picante.', 'Calamar, pepino, aguacate, ensalada Kani crunch, atomic', 8, 4.3, 23000, 2),
-(10, 'Tuna\'N Crunch', 'Cremoso con atún y plátano.', 'Atún crunch, queso crema, aguacate, plátano cremoso, kanikama', 8, 4.5, 24000, 2),
-(11, 'Euphoria', 'Ganador Sushi Master 2023.', 'Salmón, aguacate, queso crema, camarones flake, salsa iki', 8, 4.9, 28000, 3),
-(12, 'Dragon', 'Rollo con topping de aguacate y cangrejo.', 'Tilapia, langostino, queso crema, aguacate, cangrejo, mayonesa spice', 8, 4.8, 29000, 3),
-(13, 'IKI', 'Rollo emblemático del restaurante.', 'Atún, salmón, queso crema, masago, togarashi', 8, 4.7, 30000, 3),
-(14, 'TNT Fusion', 'Explosivo en sabor y textura.', 'Atún, salmón, queso crema, aguacate, Kani crunch', 8, 4.6, 27000, 3),
-(15, 'Bica Roll', 'Sellado y sabroso.', 'Langostino tempura, queso crema, atún sellado, salsa de la casa', 8, 4.6, 28000, 3);
+INSERT INTO `rollos` (`idrollos`, `nombre`, `descripccion`, `ingredientes`, `cantidad`, `calificacion`, `precio`, `idenc`, `imagen`) VALUES
+(1, 'Philadelphia', 'Clásico rollo fresco con salmón.', 'Salmón, aguacate, queso crema, ajonjolí', 8, 4.5, 22000, 1, 'Philadelphia.jpg'),
+(2, 'California', 'Rollito fresco y cremoso.', 'Cangrejo, aguacate, pepino, queso crema, masago, ajonjolí', 8, 4.3, 21000, 1, 'California.jpg'),
+(3, 'Alaska', 'Sabor equilibrado con salmón y cangrejo.', 'Salmón, aguacate, cangrejo, queso crema, ajonjolí', 8, 4.4, 23000, 1, 'Alaska.jpg'),
+(4, 'Dinamita', 'Explosión de sabor con masago.', 'Crema de cangrejo, aguacate, masago', 8, 4.2, 20000, 1, 'Dinamita.jpg'),
+(5, 'Veggie', 'Opción vegetariana ligera.', 'Queso crema, croqueta de kakiage, aguacate, wakame', 8, 4, 19000, 1, 'Veggie.jpg'),
+(6, 'Tiger Roll', 'Rollo crujiente con salsa teriyaki.', 'Masago, queso crema, aguacate, salmón, teriyaki', 8, 4.6, 24000, 2, 'TigerRoll.jpg'),
+(8, 'Essential', 'Rollo sin arroz con base de maduro.', 'Maduro, salmón, queso crema, cangrejo, aguacate, teriyaki', 6, 4.4, 25000, 2, 'Essential.jpg'),
+(9, 'Katana', 'Rollo con calamar y toque picante.', 'Calamar, pepino, aguacate, ensalada Kani crunch, atomic', 8, 4.3, 23000, 2, 'Katana.jpg'),
+(11, 'Euphoria', 'Ganador Sushi Master 2023.', 'Salmón, aguacate, queso crema, camarones flake, salsa iki', 8, 4.9, 28000, 3, 'Euphoria.jpg');
 
 -- --------------------------------------------------------
 
